@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+/** {
+	border: 2px solid red;
+}*/
+
+body {
+	background-image: url("../images/flags.JPG");
+	background-repeat: repeat;
+	text-align: center;
+}
+
+.container {
+	background-color: white;
+	margin-top: 20px;
+	border: 2px;
+	border-radius: 6px;
+	border-color: darkblue;
+	padding-bottom: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+.container h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 78px;
+}
+
+strong {
+	color: darkblue;
+}
+
+#timer {
+	height: 125px;
+	padding-top: 60px;
+}
+
+#question {
+	height: 125px;
+	font-size: 25px;
+	padding-top: 30px;
+}
+
+#answers {
+	height: 225px;
+}
