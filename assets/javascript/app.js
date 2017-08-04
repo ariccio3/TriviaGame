@@ -145,6 +145,10 @@
 	var timeOutCounter = 5;
 	var questionCount = 0;
 	var correctAnswer;
+	var currentQuestion;
+	var red;
+	var white;
+	var blue;
 	var intervalId;
 	var countdownTimer;
 	var questionCounter = 30;
@@ -159,19 +163,18 @@
 
 		for (var i = 0; i < questions.length; i++) {
 		currentQuestion = (questions[i].question);
-		var red = questions[i].answers[0];
-		var white = questions[i].answers[1];
-		var blue = questions[i].answers[2];
+		red = questions[i].answers[0];
+		white = questions[i].answers[1];
+		blue = questions[i].answers[2];
 		correctAnswer = (questions[i].correct);
 		
-		
-
 		$("#question").html(currentQuestion);
 		$("#redBtn").html(red);
 		$("#whiteBtn").html(white);
 		$("#blueBtn").html(blue);
 		$("#timer").html("Time Remaining: " + questionCounter + " Seconds");
-
+		}
+	};
 		// action when red button clicked
 
 		$("#redBtn").click(function() {
@@ -222,8 +225,7 @@
 			timesUp();
 		}
 		});
-	}
-	};
+	
 
 	var timer = function() {
 			 intervalId = setInterval(decrement, 1000);
